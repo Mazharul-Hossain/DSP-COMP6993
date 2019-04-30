@@ -1,0 +1,107 @@
+3Ssn Porch (Continuous): Three season porch area in square feet
+
+MS SubClass (Nominal): Identifies the type of dwelling involved in the sale.	
+
+       020	1-STORY 1946 & NEWER ALL STYLES
+       030	1-STORY 1945 & OLDER
+       040	1-STORY W/FINISHED ATTIC ALL AGES
+       045	1-1/2 STORY - UNFINISHED ALL AGES
+       050	1-1/2 STORY FINISHED ALL AGES
+       060	2-STORY 1946 & NEWER
+       070	2-STORY 1945 & OLDER
+       075	2-1/2 STORY ALL AGES
+       080	SPLIT OR MULTI-LEVEL
+       085	SPLIT FOYER
+       090	DUPLEX - ALL STYLES AND AGES
+       120	1-STORY PUD (Planned Unit Development) - 1946 & NEWER
+       150	1-1/2 STORY PUD - ALL AGES
+       160	2-STORY PUD - 1946 & NEWER
+       180	PUD - MULTILEVEL - INCL SPLIT LEV/FOYER
+       190	2 FAMILY CONVERSION - ALL STYLES AND AGES
+
+MS Zoning (Nominal): Identifies the general zoning classification of the sale.
+		
+       [1]	Commercial
+       [0]	All Others
+
+
+Street (Nominal): Type of road access to property
+
+       [1]	Gravel	
+       [0]	Paved
+
+
+Neighborhood (Nominal): Physical locations within Ames city limits (map available)
+
+       [1, 0, 0, 0]	Bloomington Heights
+       [0, 1, 0, 0]	Northridge
+       [0, 0, 1, 0]	Northridge Heights
+       [0, 0, 0, 1]	Stone Brook
+       [0, 0, 0, 0]	Others
+
+
+Condition 2 (Nominal): Proximity to various conditions (if more than one is present)
+       
+       [0, 0, 0, 0]	Others
+       [1, 0, 0, 0]   Within 200' of North-South Railroad
+       [0, 1, 0, 0]   Adjacent to North-South Railroad
+       [0, 0, 1, 0]   Near positive off-site feature--park, greenbelt, etc.
+       [0, 0, 0, 1]   Adjacent to postive off-site feature
+
+Roof Matl (Nominal): Roof material
+
+       [0]	Others
+       [1]	Wood Shingles
+
+
+Foundation (Nominal): Type of foundation
+		
+       [0]	Others
+       [1]	Stone
+
+
+Exterior 1 (Nominal): Exterior covering on house
+
+       [0, 0]       Others
+       [0, 1]       Cement Board
+       [0, 0]       Imitation Stucco
+
+
+
+Exterior 2 (Nominal): Exterior covering on house (if more than one material)
+
+       [1, 0]       Cement Board       
+       [0, 1]       Other       
+       [0, 0]       All Other 
+
+
+Heating       (Nominal): Type of heating
+              
+       [0]  Others
+       [1]   Gravity furnace      
+
+
+Sale Type (Nominal): Type of sale
+              
+       [0, 0]    All Others
+       [1, 0]    Home just constructed and sold
+       [0, 1]    Other
+
+
+
+Sale Condition (Nominal): Condition of sale
+
+       [0, 0, 0]       All Others
+       [1, 0, 0]       Allocation - two linked properties with separate deeds, typically condo with a garage unit 
+       [0, 1, 0]       Adjoining Land Purchase
+       [0, 0, 1]       Home was not completed when last assessed (associated with New Homes)
+
+
+
+Heating QC (Ordinal): Heating quality and condition
+
+       [0.0]     Excellent
+       [2.0]     Good
+       [4.0]     Average/Typical
+       [1.0]     Fair
+       [3.0]     Poor
